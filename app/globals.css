@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+.glassify {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(203, 255, 198, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Chatbot container */
+/* .chatbot-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+.bgW{
+  background-color: white;
+}
+/* Chatbot header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #4C57BA;
+}
+
+/* KIIT logo */
+.kiit-logo {
+  width: 65px;
+  /* Adjust size as needed */
+  height: 65px;
+  /* Adjust size as needed */
+  border-radius: 50%;
+  /* Make the image circular */
+  margin-right: 15px;
+}
+
+/* Chat messages */
+.chat-messages {
+  margin-bottom: 20px;
+  /* overflow: scroll; */
+}
+
+/* User message */
+.user-message {
+  background-color: #4C57BA;
+  /* Blue color for user messages */
+  color: #fff;
+  /* White text color */
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-right: auto;
+  /* Push user messages to the right */
+  margin-bottom: 10px;
+}
+
+/* Bot message */
+.bot-message {
+  background-color: #ccc;
+  /* Grey color for bot messages */
+  color: #333;
+  /* Dark text color */
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-left: auto;
+  /* Push bot messages to the left */
+  margin-bottom: 10px;
+}
+
+/* Chat response */
+.chat-response {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Chat input container */
+.chat-input-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Chat input field */
+.chat-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Submit button */
+.chat-submit {
+  background-color: #4C57BA;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chat-submit:hover {
+  background-color: #3d4abe;
+}
+
+/* Voice input button */
+.voice-input {
+  background-color: #6871c1;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.voice-input:hover {
+  background-color: rgb(66, 78, 189);
+}
+
+.transcriptButtons {
+  display: flex;
+
+}
+
+.transcriptButtons button {
+  background-color: #a3aaeb;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  width: 200px;
+}
+
+.transcriptButtons button:hover {
+  background-color: #7c87ea;
+}
+
+.transcript-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.716);
+  color: #b5b5b5;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+  pointer-events: none;
+  margin: 20px auto 0;
+  width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  /* Add this line to center the text */
+}
+
+.transcript-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  width: auto;
+  max-width: 80%;
+  overflow: visible;
+  white-space: normal;
+}
